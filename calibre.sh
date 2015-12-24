@@ -2,13 +2,13 @@
 
 CMD="docker run \
        --rm \
-       --name pycharm \
+       --name calibre-server \
        --net "host" \
-       --env DISPLAY=unix$DISPLAY \
        --user 1000:1000 \
-       --volume /tmp/.X11-unix:/tmp/.X11-unix \
        --volume $HOME:/home/developer \
-       kurron/docker-pycharm:latest"
+       --volume $HOME/library:/library \
+       --volume $HOME/import:/import \
+       kurron/docker-calibre:latest"
 
 echo $CMD
 $CMD

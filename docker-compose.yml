@@ -5,6 +5,8 @@ calibre:
     volumes:
         - /tmp/.X11-unix:/tmp/.X11-unix
         - /home/vagrant:/home/developer
+        - /home/vagrant/library:/library
+        - /home/vagrant/import:/import
     environment:
         DISPLAY: unix:0.0
     user: 1000:1000
