@@ -1,5 +1,5 @@
 #Overview
-This project is a simple Docker image that runs [JetBrains PyCharm IDE](http://www.jetbrains.com/).
+This project is a simple Docker image that runs the [Calibre](http://calibre-ebook.com/) e-book manager.
 
 #Prerequisites
 * a working [Docker](http://docker.io) engine
